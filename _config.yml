@@ -22,7 +22,7 @@ canonical: true
 # ---------------------------------------------------------------
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification:
+google_site_verification: zkSnlx4XqngA-8SYFGRahJ85Xh3odO9uB6ILJk6UZHM
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -30,7 +30,7 @@ bing_site_verification:
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site/
-baidu_site_verification:
+baidu_site_verification: code-XBmDG5fVMm
 
 # 360 Webmaster tools verification setting
 # see http://zhanzhang.so.com/
@@ -52,8 +52,10 @@ sougou_site_verification:
 menu:
   home: / || fas fa-home
   archives: /archives/ || fas fa-folder-open
-  # categories: /categories/ || fas fa-layer-group
-  # tags: /tags/ || fas fa-tags
+  categories: /categories/ || fas fa-layer-group
+  tags: /tags/ || fas fa-tags
+  about: /about/ || fas fa-user
+  book: /book/ || fas fa-book
   # You can add a secondary menu like follow.
   # xxx1: javascript:; || fa(s|r|l|d|b) fa-xxx
 
@@ -75,8 +77,8 @@ menu_settings:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/icons/favicon-16x16.png
-  medium: /images/icons/favicon-32x32.png
+  small: /assets/jiqiren-16x16.svg
+  medium: /assets/jiqiren-32x32.svg
   # ! --------------------------------------------------
   # ! If you don't know the following, please ignore it.
   # ! --------------------------------------------------
@@ -109,7 +111,7 @@ night_mode:
 # The layout for sidebar and content of site.
 layout:
   # The width of the content area in website.
-  content: 768px
+  content: 800px
   # The width of the sidebar in website.
   sidebar: 300px
   # The width between the content and the sidebar.
@@ -138,11 +140,11 @@ header:
   height: 80%
   # Background image of site header.
   bg_image:
-    enable: false
+    enable: true
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url:
+    url: /assets/wallhaven-832pg2.jpg
   # Mask effect of the background image.
   mask:
     enable: false
@@ -217,12 +219,12 @@ footer:
     color: "#ff0000"
   # Hexo link
   powered:
-    enable: true
+    enable: false
     # Whether to show version after Hexo link (e.g. vX.X.X)
     version: true
   # Theme link
   theme:
-    enable: true
+    enable: false
     # Whether to show version after theme link (e.g. vX.X.X)
     version: true
   # Beian information for Chinese users, see: http://www.miitbeian.gov.cn/
@@ -256,6 +258,7 @@ creative_commons:
 back2top:
   enable: true
   icon:
+    animation: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     name: fas fa-rocket
     # Rotation Angle of icon.
@@ -273,7 +276,7 @@ back2top:
 sidebar:
   enable: true
   # Optional values: left | right
-  position: right
+  position: left
   # The distance from the top of the page when the sidebar is fixed (Only `px` unit is supported)
   offsetTop: 20px
   # Whether to show horizon line.
@@ -286,16 +289,16 @@ author:
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url: /images/icons/stun-logo.svg
+    url: /assets/241601814382_.pic_hd.jpg
     # If true, the avatar would be displayed in a circle.
-    rounded: false
+    rounded: true
     # Opacity of avatar (value: 0 ~ 1)
     opacity: 1
     # Mouse hover animation
     # Optional values: turn | shake
-    animation: turn
+    animation: shake
   # Your favorite motto.
-  motto: hello world
+  motto: Give Me Five
 
 # Social links
 # Value before `||` is the target link, value after `||` is the name of FontAwesome icon.
@@ -304,19 +307,19 @@ author:
 # If you can`t find a suitable icon, you can choose to display text by adding the `origin:` prefix.
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
-  github: https://github.com/ || fab fa-github
-  google: https://plus.google.com/ || fab fa-google
-  twitter: https://twitter.com/ || fab fa-twitter
-  youtube: https://youtube.com/ || fab fa-youtube
+  github: https://github.com/Flyraty || fab fa-github
+  #google: https://plus.google.com/ || fab fa-google
+  #twitter: https://twitter.com/ || fab fa-twitter
+  #youtube: https://youtube.com/ || fab fa-youtube
   # segmentfault: https://segmentfault.com/ || origin:sf
   # weibo: https://weibo.com/ || fab fa-weibo
-  # zhihu: https://www.zhihu.com/ || origin:知
-  # wechat: yournumber || fab fa-weixin
+  zhihu: https://www.zhihu.com/people/zhang-hai-liang-83-28 || origin:知
+  wechat: zhanghailiangabc139 || fab fa-weixin
   # telegram: yournumber || fab fa-telegram
-  # qq: yournumber || fab fa-qq
+  qq: 1397554745 || fab fa-qq
 
 social_setting:
-  enable: false
+  enable: true
   # Only show by icon.
   icon_only: true
 
@@ -363,7 +366,7 @@ codeblock:
   style: default
   # The theme of code highlight.
   # Optional values: light | dark | ocean
-  highlight: light
+  highlight: ocean
   # Whether to wrap when code overflow.
   word_wrap: false
 
@@ -399,7 +402,7 @@ post_meta:
   # Dependency: https://github.com/willin/hexo-wordcount/
   # !!! Don't enable this before install dependency by `npm install hexo-wordcount --save` in hexo root directory.
   reading_time:
-    enable: false
+    enable: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     icon: far fa-clock
     # Set reading speed to count reading time.
@@ -412,7 +415,7 @@ post_meta:
   # Dependency: https://github.com/willin/hexo-wordcount/
   # !!! Don't enable this before install dependency by `npm install hexo-wordcount --save` in hexo root directory.
   word_count:
-    enable: false
+    enable: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     icon: far fa-file-word
 
@@ -534,8 +537,8 @@ livere:
 # Disqus
 # See: https://disqus.com/
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: flyraty
   count: true
 
 # Utterances
@@ -567,7 +570,7 @@ utterances:
 # Busuanzi statistics
 # See: https://busuanzi.ibruce.info/
 busuanzi:
-  enable: false
+  enable: true
   # Only show by icon.
   icon_only: false
   # Number of unique visitor to the entire site.
@@ -621,7 +624,7 @@ local_search:
 # ! This feature can only be enabled if either `algolia_search` or `local_search` is enabled.
 # ! -----------------------------------------------------------------------------------------
 assist_search:
-  enable: false
+  enable: true
   # Show the Google Search button. Use `www.google.com` to search for what you type.
   google: true
   # Show the Bing Search button. Use `www.bing.com` to search for what you type.
@@ -636,7 +639,7 @@ assist_search:
 # Canvas-ribbon
 # Dependency: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   # The width of the ribbon.
   size: 120
   # The transparency of the ribbon.
@@ -723,7 +726,7 @@ lazyload:
 # Quicklink support
 # See: https://github.com/GoogleChromeLabs/quicklink/
 quicklink:
-  enable: false
+  enable: true
   # Quicklink (quicklink.umd.js script) is loaded on demand.
   # Add `quicklink: true` in Front-matter of the page or post you need.
   # Home page and archive page can be controlled through home and archive options below.
@@ -750,7 +753,7 @@ quicklink:
 # Pjax
 # See: https://github.com/MoOx/pjax/
 pjax:
-  enable: false
+  enable: true
   # When switching pages, scroll to the bottom of the top image.
   avoid_banner: false
   # ! --------------------------------------------------
@@ -955,7 +958,7 @@ cdn:
   # See: https://github.com/tuupola/lazyload/
   # Example:
   # lazyload: //cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js
-  lazyload:
+  lazyload: //cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js
 
   # Using version: latest
   # See: https://github.com/GoogleChromeLabs/quicklink/
@@ -976,3 +979,4 @@ cdn:
   # share_css: //cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css
   share_js:
   share_css:
+
