@@ -18,6 +18,9 @@ menu:
   about: 关于
   book: 书籍
   gallery: 相册
+  about-me: 关于我
+  about-blog: 关于博客
+  notes: 笔记
 
 # 归档页、分类页、标签页
 page:
