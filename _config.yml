@@ -136,7 +136,7 @@ header:
   enable: true
   show_on:
     # Whether to show on the article page.
-    post: true
+    post: false
   # If you set a percentage, it will be calculated based on the height of screen (Supports all CSS units)
   height: 80%
   # Background image of site header.
@@ -332,7 +332,7 @@ toc:
   # If true, all words will be placed on the next lines when they overflow.
   wrap: true
   # If true, the toc of post will always be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
   # Minimum heading depth of generated toc.
   # You can also set it in Front-matter by `toc_max_depth`.
   min_depth: 1
